@@ -1,0 +1,327 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+#vector img{
+    width: 70%;
+    height: 550px;
+    position: relative;
+    top: -92px;
+    left: -100px;
+    z-index: -1;
+}
+#vector{
+    width: 1600px;
+    height: 10px;
+    margin: 0 100px;
+}
+#vector h1{
+    font-family:  'Righteous';
+    font-weight: 400;
+    font-size:35px;
+    color: #000000B8;
+    position: relative;
+    top: 85px;
+    left: 40px;
+}
+#under-vector{
+    width: 140px;
+    height: 5px;
+    background-color:#000000B8;
+    position: relative;
+    top: -470px;
+    left: 40px;
+    border-radius: 20px;
+}
+
+/*?----------------------------------------------------------navbar-------------------------------------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1600px;
+    height: 70px;
+    margin: -18px 30px;
+}
+
+#logo {
+    width: 100px;
+}
+
+#links {
+    display: flex;
+    gap: 15px;
+}
+
+#links a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Righteous';
+}
+
+#links a:active {
+    color: #D5B8B8;
+    text-decoration:underline ;
+}
+
+#cart {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#b1 {
+    width: 125px;
+    height: 40px;
+    color: #976E72;
+    border: 1px solid rgb(151, 110, 114);
+    border-radius: 20px;
+    background-color: white;
+    font-family: 'Righteous';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31.04px;
+}
+#b1:hover{
+    color: white;
+    background-color: #976E72;
+}
+
+.hamburger-menu {
+    color: white;
+    background-color: white;
+}
+
+.menu__item {
+    display: none;
+}
+
+#menu__toggle {
+    display: none;
+}
+
+/*?------------------------------------------------------------first-section--------------------------------------------------------*/
+
+#first-section{
+    width: 1050px;
+    height: 650px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns:150px 250px 250px 250px 250px;
+    grid-template-rows:80px 80px 80px 80px 80px ;
+    grid-template-areas:"pic1 product price ecolor delete" "pic2 box1 num1 oblack1 no1" "pic3 box2 num2 oblack2 no2" "pic4 box3 num3 oblack3 no3" "pic5 box4 num4 oblack4 no4" ;
+    column-gap: 10px;
+    row-gap: 45px;
+    margin: 150px auto;
+}
+/* 
+#first-section span{
+    width: 50px;
+    height: 50px;
+    grid-area: pic1;
+    border-radius: 20px;
+    padding: 20px 0;
+} */
+#first-section img:nth-of-type(1){
+    width: 100px;
+    height: 100px;
+    grid-area: pic2;
+    border-radius:27%;
+    padding: 20px 0;
+}
+#first-section img:nth-of-type(2){
+    width: 100px;
+    height:100px;
+    grid-area: pic3;
+    border-radius: 27%;
+    padding: 20px 0;
+}
+#first-section img:nth-of-type(3){
+    width:100px;
+    height:100px;
+    grid-area: pic4;
+    border-radius: 27%;
+    padding: 20px 0;
+}
+#first-section img:nth-of-type(4){
+    width:100px;
+    height:100px;
+    grid-area: pic5;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+#first-section h2:nth-of-type(1){
+    grid-area: product;
+    color: #000000BF;
+    font-weight: 400;
+    font-family:'Righteous';
+    text-align: center;
+}
+#first-section h2:nth-of-type(2){
+    grid-area: price;
+    color: #000000BF;
+    font-weight: 400;
+    font-family:'Righteous';
+    text-align: center;
+}
+#first-section h2:nth-of-type(3){
+    grid-area: ecolor;
+    color: #000000BF;
+    font-weight: 400;
+    font-family:'Righteous';
+    text-align: center;
+}
+#first-section h2:nth-of-type(4){
+    grid-area: delete;
+    color: #000000BF;
+    font-weight: 400;
+    font-family:'Righteous';
+    text-align: center;
+}
+#first-section div:nth-of-type(1){
+    grid-area: box1;
+}
+#first-section div:nth-of-type(2){
+    grid-area: box2;
+}
+#first-section div:nth-of-type(3){
+    grid-area: box3;
+}
+#first-section div:nth-of-type(4){
+    grid-area: box4;
+}
+#first-section div h1{
+    font-size: 25px;
+    font-family: 'Righteous';
+    font-weight: 400;
+}
+#first-section div p{
+    font-size: 15px;
+    font-family: 'Righteous';
+    font-weight: 400;
+    color: #00000080;
+    line-height: 1.5;
+}
+#first-section h4:nth-of-type(1){
+    grid-area: num1;
+    font-family:'Righteous';
+    color: #00000080;
+    font-size:15px;
+    text-align: center;
+    font-weight: 100;
+}
+#first-section h4:nth-of-type(2){
+    grid-area: num2;
+    font-family:'Righteous';
+    color: #00000080;
+    font-size:15px;
+    text-align: center;
+    font-weight: 100;
+}
+#first-section h4:nth-of-type(3){
+    grid-area: num3;
+    font-family:'Righteous';
+    color: #00000080;
+    font-size:15px;
+    text-align: center;
+    font-weight: 100;
+}
+#first-section h4:nth-of-type(4){
+    grid-area: num4;
+    font-family:'Righteous';
+    color: #00000080;
+    font-size:15px;
+    text-align: center;
+    font-weight: 100;
+}
+#first-section h5:nth-of-type(1){
+    grid-area: oblack1;
+    font-family:'Righteous';
+    color: #00000080;
+    font-size:15px;
+    text-align: center;
+    font-weight: 100;
+}
+#first-section h5:nth-of-type(2){
+    grid-area: oblack2;
+    font-family:'Righteous';
+    color: #00000080;
+    font-size:15px;
+    text-align: center;
+    font-weight: 100;
+}
+#first-section h5:nth-of-type(3){
+    grid-area: oblack3;
+    font-family:'Righteous';
+    color: #00000080;
+    font-size:15px;
+    text-align: center;
+    font-weight: 100;
+}
+#first-section h5:nth-of-type(4){
+    grid-area: oblack4;
+    font-family:'Righteous';
+    color: #00000080;
+    font-size:15px;
+    text-align: center;
+    font-weight: 100;
+}
+#first-section h6:nth-of-type(1){
+    grid-area: no1;
+    font-family:'Righteous';
+    text-align: center;
+    color: #00000080;
+    font-size: 15px;
+    font-weight: 100;
+}
+#first-section h6:nth-of-type(2){
+    grid-area: no2;
+    font-family:'Righteous';
+    text-align: center;
+    color: #00000080;
+    font-size: 15px;
+    font-weight: 100;
+}
+#first-section h6:nth-of-type(3){
+    grid-area: no3;
+    font-family:'Righteous';
+    text-align: center;
+    color: #00000080;
+    font-size: 15px;
+    font-weight: 100;
+}
+#first-section h6:nth-of-type(4){
+    grid-area: no4;
+    font-family:'Righteous';
+    text-align: center;
+    color: #00000080;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+#dark{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+}
+#dark img{
+    width:25px;
+    height: 25px;
+}
+#light{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+}
+#light img{
+    width: 25px;
+    height: 25px;
+}
